@@ -1,0 +1,175 @@
+// Navbar
+.nav {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba($color: #000000, $alpha: 0.25);
+
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+}
+
+.nav-left {
+    flex: 2;
+    display: flex;
+    align-items: center;
+
+    .nav-icon-a {
+        display: block;
+        padding-left: 3rem;
+        font-size: 1.5rem;
+        color: #fff;
+    }
+}
+
+.nav-links-wrapper {
+    display: none;
+}
+
+.nav-center {
+    flex: 2;
+    padding: 2rem 0;
+    text-align: center;
+
+    .nav-center-h2 {
+        font-size: $h2-size;
+        font-weight: 500;
+        letter-spacing: 0.5rem;
+        color: #fff;
+    }
+
+    .nav-center-p {
+        font-size: $paragraph-size;
+        letter-spacing: 0.5rem;
+        color: #fff;
+    }
+}
+
+.nav-right {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .book-now-a {
+        position: relative;
+        left: -2rem;
+        padding: 1.5rem 4rem;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        background-color: #2d4c56;
+        color: #fff;
+    }
+
+    .book-now-a:hover {
+        opacity: 0.9;
+    }
+
+    .gallery-sm {
+        display: none;
+    }
+}
+
+// On Click
+.nav.show {
+    background-color: #fff;
+
+    .nav-left {
+        .nav-icon-a {
+            color: #2d4c56;
+        }
+    }
+
+    .nav-center {
+        .nav-center-h2 {
+            color: #2d4c56;
+        }
+
+        .nav-center-p {
+            color: #2d4c56;
+        }
+    }
+}
+
+.nav-links-wrapper.show {
+    display: block;
+    background-color: #fff;
+    border-top: 2px solid gray;
+
+    .nav-ul {
+        margin-left: 3rem;
+        padding: 2rem 0 4rem 0;
+    }
+
+    .nav-li {
+        margin: 1rem 0;
+    }
+
+    .nav-a {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #2d4c56;
+    }
+
+    #nav-final-link {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .nav-a:hover {
+        color: #46b0b0;
+    }
+
+    .active-link {
+        color: #46b0b0;
+    }
+}
+
+@media screen and (max-width: 874px) {
+    // Hide on small
+    #contact-icon {
+        display: none;
+    }
+
+    #gallery-icon-a {
+        display: none;
+    }
+
+    .nav-center {
+        position: relative;
+    }
+
+    .book-now-a {
+        display: none;
+    }
+
+    // Styling
+    .nav-center {
+        flex: 3;
+    }
+
+    .nav-center .nav-center-h2 {
+        font-size: 1.75rem;
+    }
+
+    .nav-center .nav-center-p {
+        font-size: 1.25rem;
+    }
+
+    // Show on small
+    .nav-right .gallery-sm {
+        display: block;
+        position: relative;
+        left: -3rem;
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    .nav.show .nav-right .gallery-sm {
+        color: #2d4c56;
+    }
+}

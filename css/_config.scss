@@ -1,0 +1,63 @@
+// Imports
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=PT+Serif:wght@400;700&display=swap");
+
+// Variables
+$default-font-family: "PT Serif", serif;
+$style-font-family: "Dancing Script", cursive;
+$header-h1-size: 8.5rem;
+$h1-size: 5rem;
+$h2-size: 2.5rem;
+$paragraph-size: 1.75rem;
+
+// Mixins
+@mixin default-link() {
+    border-bottom: 1px solid #46b0b0;
+    font-size: $paragraph-size;
+    color: #46b0b0;
+}
+
+@mixin showcase-grid-h2() {
+    margin-bottom: 2rem;
+    font-size: $h2-size + 1rem;
+    color: #2d4c56;
+}
+
+@mixin showcase-grid-p() {
+    margin-bottom: 2rem;
+    font-size: $paragraph-size;
+    letter-spacing: 0.2rem;
+    color: #2d4c56;
+}
+
+@mixin showcase-grid-a() {
+    font-size: $paragraph-size;
+    border-bottom: 1px solid #46b0b0;
+    color: #46b0b0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $default-font-family;
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
