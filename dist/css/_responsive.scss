@@ -1,0 +1,256 @@
+@import "config";
+
+@media screen and (max-width: 1406px) {
+    .header-bg {
+        animation: none;
+    }
+}
+
+// Large-Medium Devices
+@media screen and (max-width: 900px) {
+    // Header
+    .header-text-wrap .header-h1 {
+        font-size: $header-h1-size - 2.5rem;
+    }
+
+    .header-text-wrap .header-p {
+        font-size: 3rem;
+    }
+
+    .header-text-wrap .header-a {
+        padding: 1rem 2rem;
+        font-size: 2rem;
+    }
+
+    // Main Text
+    .main-text-wrap {
+        text-align: center;
+
+        .main-h1 {
+            font-size: 3.5rem;
+        }
+    }
+
+    // Showcase Section
+    .showcase-grid-container .showcase-grid-item {
+        grid-template-columns: 1fr;
+    }
+
+    .showcase-grid-container .no-swap {
+        order: 0;
+    }
+
+    .showcase-grid-container .swap {
+        order: 0;
+    }
+
+    .showcase-grid-container .grid-showcase-text-wrap {
+        max-width: 100%;
+        margin: 2rem 0;
+    }
+
+    .showcase-grid-container .grid-showcase-text-wrap .showcase-grid-h2 {
+        font-size: $h2-size + 0.5rem;
+    }
+
+    // Island Isolation Section
+    .island-isolation-card {
+        width: 100%;
+        padding: 5rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .island-isolation-card .island-isolation-card-text-wrap {
+        max-width: 100%;
+    }
+
+    .island-isolation-card .island-isolation-h2 {
+        font-size: $h2-size + 0.5rem;
+    }
+
+    // Packages & Offers Section
+    .packages-offers-section .packages-main-heading {
+        text-align: center;
+        font-size: $h2-size;
+    }
+
+    .packages-grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .packages-grid-item {
+        text-align: center;
+    }
+
+    .packages-grid-item:nth-child(1) {
+        margin-bottom: 3rem;
+    }
+
+    // Upper Footer
+    .upper-footer-grid-container {
+        grid-template-columns: 1fr;
+        position: relative;
+        padding-left: 3rem;
+    }
+
+    .social-media-links-wrap {
+        position: absolute;
+        bottom: 0;
+        margin-top: 1rem;
+    }
+
+    .upper-footer-grid-container .upper-footer-grid-item {
+        margin-bottom: 3rem;
+    }
+
+    .upper-footer-grid-container .upper-footer-grid-item:nth-child(3) {
+        grid-column: span 1;
+        margin-bottom: 6rem;
+    }
+
+    // Upper Footer Final Section
+    .upper-footer-final-section {
+        padding-left: 3rem;
+    }
+
+    // Main Footer
+    .main-footer-upper-section .main-footer-upper-section-text-wrap {
+        margin-top: 5rem;
+    }
+
+    .main-footer-grid-container {
+        grid-template-columns: 1fr;
+        padding-left: 3rem;
+    }
+
+    .main-footer-grid-item-wrap {
+        margin-bottom: 3rem;
+    }
+
+    // Main Footer Middle Section
+    .main-footer-middle-section .main-footer-middle-section-a-wrap {
+        position: relative;
+        top: 1rem;
+    }
+
+    // ================================ Resort Page ================================
+
+    .header-bg {
+        animation: none;
+    }
+
+    // ============================ Activities Page ============================
+
+    .a-main-showcase-inner-wrap {
+        width: 100vw;
+    }
+
+    .a-main-showcase-grid-container {
+        grid-template-columns: 1fr;
+        grid-column-gap: 0;
+    }
+
+    .a-main-showcase-grid-container .a-main-showcase-grid-item {
+        text-align: center;
+    }
+
+    .a-main-showcase-grid-container .a-main-showcase-ul {
+        list-style: none;
+    }
+    .a-main-showcase-grid-container .a-main-showcase-li {
+        margin: 0 2rem 1rem 0;
+    }
+
+    #a-main-showcase-final-a {
+        font-size: 1.2rem;
+    }
+
+    .main-text-grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .main-text-wrap {
+        position: relative;
+        top: 5rem;
+    }
+
+    .main-contact-text-wrap {
+        display: none;
+    }
+
+    // ============================ Dining Page ============================
+    .d-main-text-grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    #d-main-text-grid-wrap {
+        margin: 0 0 2rem 5rem;
+    }
+
+    .d-main-text-grid-container .d-main-text-grid-inner-grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    // Chef Section
+    .chef-grid-container {
+        grid-template-columns: 1fr;
+        grid-gap: 5rem;
+        text-align: center;
+    }
+}
+
+// Small Devices
+@media screen and (max-width: 480px) {
+    // Main Footer Middle Section
+    .main-footer-middle-section {
+        display: block;
+    }
+
+    .main-footer-middle-section {
+        padding: 3rem;
+    }
+
+    .main-footer-middle-section .main-footer-middle-section-a-wrap {
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .main-footer-middle-section .main-footer-middle-section-h2 {
+        flex: 1;
+        margin-bottom: 1rem;
+    }
+
+    .main-footer-middle-section .main-footer-middle-section-a {
+        margin-bottom: 1rem;
+    }
+
+    .main-footer-middle-section .main-footer-middle-section-a i {
+        margin-right: 2rem;
+    }
+
+    .main-footer-middle-section .main-footer-middle-section-a #wine-icon {
+        margin-right: 3.25rem;
+    }
+
+    .main-footer-middle-section .main-footer-middle-section-a #ski-icon {
+        margin-right: 2.375rem;
+    }
+
+    // Main Footer Final Section
+    .main-footer-final-section {
+        padding: 0.25rem 0 1.75rem 0;
+        text-align: center;
+    }
+
+    // ============================ Dining Page ============================
+
+    .d-main-text-grid-container .d-main-text-grid-inner-grid-container {
+        margin-left: 2rem;
+    }
+
+    #d-main-text-grid-wrap {
+        margin: 0 0 2rem 2rem;
+    }
+}
